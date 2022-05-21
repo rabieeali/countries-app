@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "roboto";
+  src: url(/public/fonts/Roboto-Regular.ttf);
+}
+
+* {
+ 
+  /* font-family: "roboto"; */
+}
+
+.mt-10 {
+  margin-top: 10rem;
+}
+.flag {
+  height: 200px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.animation {
+  transition: all 0.3s ease-in-out;
+}
+.animation:hover {
+  transform: scale(1.1);
+}
+.end-10{
+  right: 15px;
+}
+.border-5{
+  border-radius: 5em;
+}
+
