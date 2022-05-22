@@ -8,9 +8,9 @@ export default function Pagination({ cardsPerPage, totalCards, paginate }) {
       <ul className="pagination">
         {pageNumbers.map((number) => (
           <li key={number} className="page-item">
-            <a onClick={() => paginate(number)} href="!#" className="page-link">
+            <span onClick={() => paginate(number)} className="page-link cursor-pointer">
               {number}
-            </a>
+            </span>
           </li>
         ))}
       </ul>

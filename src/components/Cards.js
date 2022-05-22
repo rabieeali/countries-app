@@ -3,7 +3,7 @@ import "./Loader.css";
 import { useState } from "react";
 
 
-const Cards = ({ countries, setCountries,className }) => {
+const Cards = ({ countries, setCountries,dark }) => {
   const [searchTerm, setSearchTerm] = useState("")
 
 
@@ -59,7 +59,7 @@ const Cards = ({ countries, setCountries,className }) => {
               img={country.flags.png}
               region={country.region}
               population={country.population}
-              className={className}
+              dark={dark}
             />
           ))}
         </div>
