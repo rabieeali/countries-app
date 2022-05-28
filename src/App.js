@@ -112,6 +112,7 @@ const App = () => {
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
   const currentCards = countries.slice(indexOfFirstCard, indexOfLastCard);
+  
   dark
     ? document.body.classList.add("bg-dark-blue")
     : document.body.classList.remove("bg-dark-blue");
@@ -143,7 +144,7 @@ const App = () => {
       const data = await res.json();
       await setCountries(data);
     } else {
-      const res = await fetch(
+        const res = await fetch(
         `https://restcountries.com/v3.1/region/${region}`
       );
       const data = await res.json();
